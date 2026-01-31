@@ -1,0 +1,26 @@
+body { margin:0; background:transparent; font-family:sans-serif; }
+.menu {
+    position:absolute;
+    top:30%;
+    left:40%;
+    width:20%;
+    background:rgba(0,0,0,0.7);
+    padding:10px;
+    border-radius:12px;
+    opacity:0;
+    transform: scale(0.8);
+    transition: all 0.2s ease;
+}
+.menu.open { opacity:1; transform: scale(1); }
+.option {
+    padding:8px;
+    color:white;
+    cursor:pointer;
+    transition: all 0.1s ease;
+}
+.option.highlight {
+    background:rgba(255,255,255,0.2);
+    transform: scale(1.05);
+    font-weight:bold;
+}
+.option:hover { background:rgba(255,255,255,0.15); }
